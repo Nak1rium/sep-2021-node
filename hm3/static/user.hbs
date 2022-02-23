@@ -9,19 +9,19 @@
 </head>
 <body>
 
-{{#each useR}}
-    <div  style="background-color: pink; margin: 10px; padding: 10px">
-        <div>{{this.firstName}}</div>
-        <div>{{this.lastName}}</div>
-        <div>{{this.email}}</div>
-        <div>{{this.password}}</div>
-        <div>{{this.age}}</div>
-        <div>{{this.city}}</div>
-        <form action="/user/{{this.id}}" method="post">
+
+    <div style="background-color: pink; margin: 10px; padding: 10px">
+        <div>{{user.firstName}}</div>
+        <div>{{user.lastName}}</div>
+        <div>{{user.email}}</div>
+        <div>{{user.password}}</div>
+        <div>{{user.age}}</div>
+        <div>{{user.city}}</div>
+        <form action="/users/{{user.id}}" method="post">
             <input type="submit" value="delete">
         </form>
     </div>
-{{/each}}
+
 
 </body>
 </html>
